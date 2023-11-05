@@ -1,4 +1,4 @@
-ROMANIAN_CHARS = 'AĂÂBCDEFGHIÎJKLMNOPQRSȘTȚUVWXYZ'
+ROMANIAN_CHARS = 'AĂÂBCDEFGHIÎJKLMNOPQRSȘTȚUVWXYZAĂÂBCDEFGHIÎJKLMNOPQRSȘTȚUVWXYZ'
 
 def check_valid_text(input_text):
     if not all(char.upper() in ROMANIAN_CHARS for char in input_text):
