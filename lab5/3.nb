@@ -1,0 +1,123 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3843,        113]
+NotebookOptionsPosition[      3366,         96]
+NotebookOutlinePosition[      3764,        112]
+CellTagsIndexPosition[      3721,        109]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "Parametrii", "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "p", "=", 
+     "323170060713110073001535134778251633624880571334890751745884341392698068\
+341362100027920563626401646854585563579353308169288290230805734726252735547424\
+612457410262025279165729728627063003252634282131457669314142236542209411113486\
+299916574782680342305530863490506355577122191878903327295696961297438562417412\
+362372251973464026918557977679768230146253979330580152268587307611975324364674\
+758554607150438968449403661304976978128542959586595975670512838521327844685229\
+255045682728791137200989318739591433741758378260002780349731985520606075332341\
+22603254684088120031105907484281003994966956119696956248629032338072839127039"\
+}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"g", "=", "2"}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Generarea", " ", "numerelor", " ", "secrete"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"a", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"p", "-", "1"}]}], "}"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"b", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"p", "-", "1"}]}], "}"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Calculul", " ", "cheilor", " ", "publice"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"A", "=", 
+     RowBox[{"PowerMod", "[", 
+      RowBox[{"g", ",", "a", ",", "p"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"B", "=", 
+     RowBox[{"PowerMod", "[", 
+      RowBox[{"g", ",", "b", ",", "p"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Calculul", " ", "cheii", " ", "comune"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"cheieComunaAlice", "=", 
+     RowBox[{"PowerMod", "[", 
+      RowBox[{"B", ",", "a", ",", "p"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"cheieComunaBob", "=", 
+     RowBox[{"PowerMod", "[", 
+      RowBox[{"A", ",", "b", ",", "p"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Verificarea", " ", "dac\[ACup]", " ", "cheile", " ", "comune", " ", 
+     "sunt", " ", "identice"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"cheieComunaAlice", "\[Equal]", "cheieComunaBob"}], 
+   "\n"}]}]], "Input",
+ CellChangeTimes->{{3.908821146209631*^9, 3.908821146211729*^9}},
+ CellLabel->
+  "In[442]:=",ExpressionUUID->"f4da7dbb-ff25-4863-8b32-d7ed201683b1"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.9088211474861546`*^9, 3.9088211505694237`*^9}},
+ CellLabel->
+  "Out[450]=",ExpressionUUID->"ff889a9c-9818-43d8-8aec-89ea225cb58b"]
+}, Open  ]]
+},
+WindowSize->{760, 833},
+WindowMargins->{{572, Automatic}, {56, Automatic}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3b39a36e-151f-4748-8532-801951dea8e3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2583, 66, 523, "Input",ExpressionUUID->"f4da7dbb-ff25-4863-8b32-d7ed201683b1"],
+Cell[3166, 90, 184, 3, 32, "Output",ExpressionUUID->"ff889a9c-9818-43d8-8aec-89ea225cb58b"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
